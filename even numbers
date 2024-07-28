@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Even Numbers</title>
+</head>
+<body>
+    <div id="evenNumberList"></div>
+
+    <script>
+        const evenNumberListDiv = document.getElementById('evenNumberList');
+
+        for (let i = 1; i <= 100; i++) {
+            if (i % 2 === 0) {
+                const p = document.createElement('p');
+                p.textContent = i;
+                evenNumberListDiv.appendChild(p);
+            }
+        }
+    </script>
+</body>
+</html>
